@@ -1,5 +1,26 @@
 # ExtremeProgrammer
 
+
+
+## Little docs:
+``` bash
+
+git config --global user.email "email"
+git config --global user.name " callName / the name the owner knows you"
+git add --all
+git commit -m "commit message"
+git push origin main
+git tag -a v0.0.0.1 -m "release message"
+git push origin v0.0.0.1
+
+```
+
+
+
+
+
+
+
 sync across devices:
 Today
 best cli based editor / ide for 2050
@@ -245,3 +266,45 @@ sh
 git tag -d v1.0.0  # Deletes locally
 git push origin --delete v1.0.0  # Deletes remotely
 Would you like help automating releases with scripts? 🚀
+
+
+In professional releases, multiple files are added to Git systematically to ensure a clean and organized repository. Here’s how you can do it:
+
+1. Add Specific Files
+If you want to add multiple files manually, use:
+
+sh
+git add file1.txt file2.txt file3.txt
+2. Add All Files in a Directory
+To add all files inside a folder:
+
+sh
+git add folder_name/*
+3. Add All Modified and New Files
+To stage all changes, including new and modified files:
+
+sh
+git add .
+or
+
+sh
+git add --all
+4. Add Files by Extension
+If you want to add all files of a specific type:
+
+sh
+git add *.txt
+git add *.py
+5. Use Interactive Staging
+For more control, use interactive staging:
+
+sh
+git add -i
+This lets you select files individually before committing.
+
+6. Commit with a Structured Message
+Once files are staged, commit them with a meaningful message:
+
+sh
+git commit -m "Added new features and updated documentation"
+Would you like help automating this process for releases? 🚀
