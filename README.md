@@ -13,6 +13,10 @@ git push origin main
 git tag -a v0.0.0.1 -m "release message"
 git push origin v0.0.0.1
 
+git branch new-branch
+git branch
+git checkout new-branch
+
 ```
 
 
